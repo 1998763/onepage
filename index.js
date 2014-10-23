@@ -142,7 +142,7 @@ Onepage.prototype.move = function(page) {
   }
 
   stylish(
-    me.element, 'transform', 'translate3d(0,-' + page * 100 + '%,0)'
+    me.element, 'transform', 'translate3d(0,-' + document.body.clientHeight * page + 'px,0)'
   );
 
   // emit events
